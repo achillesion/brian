@@ -184,7 +184,7 @@ const CryptoGrid = ({
   return (
     <section {...props} className={outerClasses}>
       <div className="container-md">
-        <div className={`${innerClasses} ml-5 mr-5`}>
+        <div className={{innerClasses}}>
           <div className="hero-content">
             <h1
               className="mt-0 mb-16 reveal-from-bottom"
