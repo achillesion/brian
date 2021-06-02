@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ReactDataGrid from "@inovua/reactdatagrid-community";
-import "@inovua/reactdatagrid-community/index.css";
-// import "@inovua/reactdatagrid-community/base.css";
-// import "@inovua/reactdatagrid-community/theme/default-dark.css";
+// import "@inovua/reactdatagrid-community/index.css";
+import "@inovua/reactdatagrid-community/base.css";
+import "@inovua/reactdatagrid-community/theme/default-dark.css";
 
 const propTypes = {
   ...SectionProps.types,
@@ -26,7 +26,7 @@ const CryptoGrid = ({
   invertColor,
   ...props
 }) => {
-  const [videoModalActive, setVideomodalactive] = useState(false);
+//   const [videoModalActive, setVideomodalactive] = useState(false);
 
   const filterValue = [
     { name: 'wallet', operator: 'startsWith', type: 'string', value: '' },
@@ -156,15 +156,15 @@ const CryptoGrid = ({
       textAlign: "center",
     },
   ];
-  const openModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(true);
-  };
+//   const openModal = (e) => {
+//     e.preventDefault();
+//     setVideomodalactive(true);
+//   };
 
-  const closeModal = (e) => {
-    e.preventDefault();
-    setVideomodalactive(false);
-  };
+//   const closeModal = (e) => {
+//     e.preventDefault();
+//     setVideomodalactive(false);
+//   };
 
   const outerClasses = classNames(
     "hero section center-content",
