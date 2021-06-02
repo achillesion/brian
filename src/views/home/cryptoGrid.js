@@ -2,9 +2,9 @@ import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ReactDataGrid from "@inovua/reactdatagrid-community";
-import "@inovua/reactdatagrid-community/index.css";
-// import "@inovua/reactdatagrid-community/base.css";
-// import "@inovua/reactdatagrid-community/theme/default-dark.css";
+// import "@inovua/reactdatagrid-community/index.css";
+import "@inovua/reactdatagrid-community/base.css";
+import "@inovua/reactdatagrid-community/theme/default-dark.css";
 
 const propTypes = {
   ...SectionProps.types,
