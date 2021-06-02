@@ -2,9 +2,9 @@ import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ReactDataGrid from "@inovua/reactdatagrid-community";
-// import "@inovua/reactdatagrid-community/index.css";
-import "@inovua/reactdatagrid-community/base.css";
-import "@inovua/reactdatagrid-community/theme/default-dark.css";
+import "@inovua/reactdatagrid-community/index.css";
+// import "@inovua/reactdatagrid-community/base.css";
+// import "@inovua/reactdatagrid-community/theme/default-dark.css";
 
 const propTypes = {
   ...SectionProps.types,
@@ -26,14 +26,14 @@ const CryptoGrid = ({
   invertColor,
   ...props
 }) => {
-//   const [videoModalActive, setVideomodalactive] = useState(false);
+  //   const [videoModalActive, setVideomodalactive] = useState(false);
 
   const filterValue = [
-    { name: 'wallet', operator: 'startsWith', type: 'string', value: '' },
-    { name: 'amount', operator: 'startsWith', type: 'string', value: '' },
-    { name: 'priority', operator: 'startsWith', type: 'string', value: '' },
-    { name: 'pending', operator: 'startsWith', type: 'string', value: '' },
-    { name: 'token', operator: 'startsWith', type: 'string', value: '' },
+    { name: "wallet", operator: "startsWith", type: "string", value: "" },
+    { name: "amount", operator: "startsWith", type: "string", value: "" },
+    { name: "priority", operator: "startsWith", type: "string", value: "" },
+    { name: "pending", operator: "startsWith", type: "string", value: "" },
+    { name: "token", operator: "startsWith", type: "string", value: "" },
   ];
 
   const dataGrid = [
@@ -156,15 +156,15 @@ const CryptoGrid = ({
       textAlign: "center",
     },
   ];
-//   const openModal = (e) => {
-//     e.preventDefault();
-//     setVideomodalactive(true);
-//   };
+  //   const openModal = (e) => {
+  //     e.preventDefault();
+  //     setVideomodalactive(true);
+  //   };
 
-//   const closeModal = (e) => {
-//     e.preventDefault();
-//     setVideomodalactive(false);
-//   };
+  //   const closeModal = (e) => {
+  //     e.preventDefault();
+  //     setVideomodalactive(false);
+  //   };
 
   const outerClasses = classNames(
     "hero section center-content",
@@ -184,22 +184,31 @@ const CryptoGrid = ({
   return (
     <section {...props} className={outerClasses}>
       <div className="container-md">
-        <div className={{innerClasses}}>
+        <div className={{ innerClasses }}>
           <div className="hero-content">
             <h1
               className="mt-0 mb-16 reveal-from-bottom"
               data-reveal-delay="200"
             >
-              Top 100 Cryptocurrency by Market{" "}
-              <span className="text-color-primary">Capitalization</span>
+              Sniper Watcher{" "}
             </h1>
-            <div style={{margin:40}}>
-            <ReactDataGrid
-              style={gridStyle}
-              columns={cryptoTableConfig}
-              dataSource={dataGrid}
-              defaultFilterValue={filterValue}
-            />
+            <h3
+              className="mt-0 mb-16 reveal-from-bottom"
+              data-reveal-delay="200"
+            >
+              Check if a token launch is about to be botted.{" "}
+            </h3>
+            <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+              These are pending orders inside a token launch sniper bot that
+              will be placed when the token goes on sale.
+            </p>
+            <div style={{ margin: 40 }}>
+              <ReactDataGrid
+                style={gridStyle}
+                columns={cryptoTableConfig}
+                dataSource={dataGrid}
+                defaultFilterValue={filterValue}
+              />
             </div>
           </div>
         </div>
