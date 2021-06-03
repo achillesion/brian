@@ -2,9 +2,10 @@ import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ReactDataGrid from "@inovua/reactdatagrid-community";
-// import "@inovua/reactdatagrid-community/index.css";
-import "@inovua/reactdatagrid-community/base.css";
-import "@inovua/reactdatagrid-community/theme/default-dark.css";
+//import "@inovua/reactdatagrid-community/theme/default-light.css"
+import "@inovua/reactdatagrid-community/index.css";
+// import "@inovua/reactdatagrid-community/base.css";
+//import "@inovua/reactdatagrid-community/theme/.css";
 
 const propTypes = {
   ...SectionProps.types,
@@ -14,7 +15,7 @@ const defaultProps = {
   ...SectionProps.defaults,
 };
 
-const gridStyle = { minHeight: 550 };
+const gridStyle = { minHeight: 650 };
 
 const CryptoGrid = ({
   className,
@@ -121,6 +122,145 @@ const CryptoGrid = ({
       token: "Dogone Token (🐶)0x44602b3b420EaE334AAb7D584DB9069a0d812809",
       pending: "5/22/2021, 6:02:56 AM",
     },
+    {
+      wallet: "0x6bf5e572d16C5061A5e6292059E5386194C2210b",
+      amount: "$23.570.0999 WBNB",
+      priority: "320",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:48:14 AM",
+    },
+    {
+      wallet: "0xccb43aC63D651A980ecc50251b904dc3bD1C40be",
+      amount: "$47.170.1999 WBNB",
+      priority: "255",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:47:32 AM",
+    },
+    {
+      wallet: "0xccb43aC63D651A980ecc50251b904dc3bD1C40be",
+      amount: "$47.180.2000 WBNB",
+      priority: "255",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:47:08 AM",
+    },
+    {
+      wallet: "0xccb43aC63D651A980ecc50251b904dc3bD1C40be",
+      amount: "$47.180.2000 WBNB",
+      priority: "255",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:46:41 AM",
+    },
+    {
+      wallet: "0x6bf5e572d16C5061A5e6292059E5386194C2210b",
+      amount: "$11.810.0501 WBNB",
+      priority: "320",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:43:59 AM",
+    },
+    {
+      wallet: "0x3a2595813A233b9F674f445AfC9CbB4C01Dd6Dce",
+      amount: "$11.800.0500 WBNB",
+      priority: "486",
+      token: "NFTeaseToken (TEASE)0xbD32bAa54F0A52D927735918130638E7A4BD74cD",
+      pending: "5/22/2021, 7:10:41 AM",
+    },
+    {
+      wallet: "0x646135266E5fCA3Dd5c2aD6aDde86bAF93A52406",
+      amount: "$21.320.0904 WBNB",
+      priority: "515",
+      token: "Dogone Token (🐶)0x44602b3b420EaE334AAb7D584DB9069a0d812809",
+      pending: "5/22/2021, 7:02:05 AM",
+    },
+    {
+      wallet: "0x03058a22C4fAAd6350cce2C5Be67292255ab398E",
+      amount: "$2.330.0099 WBNB",
+      priority: "252",
+      token: "Dogone Token (🐶)0x44602b3b420EaE334AAb7D584DB9069a0d812809",
+      pending: "5/22/2021, 6:17:23 AM",
+    },
+    {
+      wallet: "0x03058a22C4fAAd6350cce2C5Be67292255ab398E",
+      amount: "$11.790.0500 WBNB",
+      priority: "252",
+      token: "Dogone Token (🐶)0x44602b3b420EaE334AAb7D584DB9069a0d812809",
+      pending: "5/22/2021, 6:10:14 AM",
+    },
+    {
+      wallet: "0x03058a22C4fAAd6350cce2C5Be67292255ab398E",
+      amount: "$2.350.0100 WBNB",
+      priority: "252",
+      token: "Dogone Token (🐶)0x44602b3b420EaE334AAb7D584DB9069a0d812809",
+      pending: "5/22/2021, 6:05:05 AM",
+    }, {
+      wallet: "0x6bf5e572d16C5061A5e6292059E5386194C2210b",
+      amount: "$23.570.0999 WBNB",
+      priority: "320",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:48:14 AM",
+    },
+    {
+      wallet: "0xccb43aC63D651A980ecc50251b904dc3bD1C40be",
+      amount: "$47.170.1999 WBNB",
+      priority: "255",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:47:32 AM",
+    },
+    {
+      wallet: "0xccb43aC63D651A980ecc50251b904dc3bD1C40be",
+      amount: "$47.180.2000 WBNB",
+      priority: "255",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:47:08 AM",
+    },
+    {
+      wallet: "0xccb43aC63D651A980ecc50251b904dc3bD1C40be",
+      amount: "$47.180.2000 WBNB",
+      priority: "255",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:46:41 AM",
+    },
+    {
+      wallet: "0x6bf5e572d16C5061A5e6292059E5386194C2210b",
+      amount: "$11.810.0501 WBNB",
+      priority: "320",
+      token: "ElonDoge (EDOGE)0xf01830E8642A33e8cfF5550D986D1031601C9f1a",
+      pending: "5/22/2021, 9:43:59 AM",
+    },
+    {
+      wallet: "0x3a2595813A233b9F674f445AfC9CbB4C01Dd6Dce",
+      amount: "$11.800.0500 WBNB",
+      priority: "486",
+      token: "NFTeaseToken (TEASE)0xbD32bAa54F0A52D927735918130638E7A4BD74cD",
+      pending: "5/22/2021, 7:10:41 AM",
+    },
+    {
+      wallet: "0x646135266E5fCA3Dd5c2aD6aDde86bAF93A52406",
+      amount: "$21.320.0904 WBNB",
+      priority: "515",
+      token: "Dogone Token (🐶)0x44602b3b420EaE334AAb7D584DB9069a0d812809",
+      pending: "5/22/2021, 7:02:05 AM",
+    },
+    {
+      wallet: "0x03058a22C4fAAd6350cce2C5Be67292255ab398E",
+      amount: "$2.330.0099 WBNB",
+      priority: "252",
+      token: "Dogone Token (🐶)0x44602b3b420EaE334AAb7D584DB9069a0d812809",
+      pending: "5/22/2021, 6:17:23 AM",
+    },
+    {
+      wallet: "0x03058a22C4fAAd6350cce2C5Be67292255ab398E",
+      amount: "$11.790.0500 WBNB",
+      priority: "252",
+      token: "Dogone Token (🐶)0x44602b3b420EaE334AAb7D584DB9069a0d812809",
+      pending: "5/22/2021, 6:10:14 AM",
+    },
+    {
+      wallet: "0x03058a22C4fAAd6350cce2C5Be67292255ab398E",
+      amount: "$2.350.0100 WBNB",
+      priority: "252",
+      token: "Dogone Token (🐶)0x44602b3b420EaE334AAb7D584DB9069a0d812809",
+      pending: "5/22/2021, 6:05:05 AM",
+    },
   ];
 
   const cryptoTableConfig = [
@@ -181,6 +321,7 @@ const CryptoGrid = ({
     bottomDivider && "has-bottom-divider"
   );
 
+
   return (
     <section {...props} className={outerClasses}>
       <div className="container-md">
@@ -198,6 +339,7 @@ const CryptoGrid = ({
               style={gridStyle}
               columns={cryptoTableConfig}
               dataSource={dataGrid}
+              pagination={true}
               defaultFilterValue={filterValue}
             />
             </div>
