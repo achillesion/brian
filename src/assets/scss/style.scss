@@ -126,3 +126,19 @@
 # Helpers
 --------------------------------------------------------------*/
 @import "core/base/helpers";
+
+
+body{
+	background-color: whitesmoke;
+}
+
+footer{
+	background-color: whitesmoke;
+}
+
+h1{
+	color: purple;
+	span{
+		color: blue;
+	}
+}
